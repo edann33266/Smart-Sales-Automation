@@ -1,0 +1,79 @@
+╔══════════════════════════════════════════════════════════════╗
+║                    SalesAI Quick Start                       ║
+╚══════════════════════════════════════════════════════════════╝
+
+📋 PREREQUISITES
+  • Python 3.10+
+  • Internet connection (for Gemini API)
+
+🚀 SETUP (First Time Only)
+
+  1. Get Gemini API Key
+     → Visit: https://aistudio.google.com/app/apikey
+     → Click "Create API Key"
+     → Copy your key
+
+  2. Configure .env
+     → Open .env file
+     → Set: GEMINI_API_KEY=your_key_here
+     → Save file
+
+  3. Install Dependencies
+     → Run: pip install -r requirements.txt
+
+  4. Verify Setup
+     → Run: python check_setup.py
+
+✨ RUNNING THE APP
+
+  Option A: Interactive (Easiest)
+    → python start.py
+    → Follow the prompts
+
+  Option B: Web Interface (Recommended)
+    → python api.py
+    → Open frontend/index.html in browser
+
+  Option C: Command Line
+    → python main.py
+
+📧 EMAIL SETTINGS
+
+  • DRY_RUN=true  → Emails print to console (safe for testing)
+  • DRY_RUN=false → Emails actually send (requires SMTP setup)
+
+🎯 USING THE WEB INTERFACE
+
+  1. Select a lead from the left sidebar
+  2. Click "Generate Email" button
+  3. Review the AI-generated email
+  4. Edit if needed
+  5. Click "Send Email" button
+
+🔧 TROUBLESHOOTING
+
+  Problem: "GEMINI_API_KEY not set"
+  Solution: Add your API key to .env file
+
+  Problem: "Backend Offline"
+  Solution: Make sure python api.py is running
+
+  Problem: Emails not sending
+  Solution: Check SMTP settings or set DRY_RUN=true
+
+📚 HELPFUL FILES
+
+  • SETUP_GUIDE.md  → Detailed setup instructions
+  • CHANGES.md      → What was fixed and improved
+  • .env.example    → Configuration template
+  • check_setup.py  → Verify your configuration
+
+🆘 NEED HELP?
+
+  1. Run: python check_setup.py
+  2. Read: SETUP_GUIDE.md
+  3. Check: CHANGES.md for what's new
+
+╔══════════════════════════════════════════════════════════════╗
+║  Ready to go? Run: python start.py                          ║
+╚══════════════════════════════════════════════════════════════╝
